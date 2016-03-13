@@ -1,0 +1,164 @@
+﻿
+.buttonCSS
+        {
+            font-family: 'Lucida Bright', Georgia, serif;
+	        font-size: 15px;
+	        font-style: normal;
+	        font-variant: normal;
+	        font-weight: 500;
+	        line-height: 26.3999996185303px;
+            padding: 5px;
+            background-color: #b5b5b5;
+            border: 2px outset #ffa853;
+            border-radius: 5px;
+            border-width: thin;
+            border-color:#FFFFCC;
+            text-align: center;
+            color: black;
+            shape-rendering: optimizeQuality;
+            transition: ease-out 0.2s;
+        }
+            .buttonCSS:hover
+            {
+                color: black;
+                background-color: white;
+            }
+            .buttonCSS:active
+            {
+                background-color: grey;
+                border: 1px inset #ffa853;
+            }
+
+            
+.textbox
+        {
+            font-family: 'Lucida Bright', Georgia, serif;
+	        font-size: 12px;
+	        font-style: normal;
+	        font-variant: normal;
+	        font-weight: 500;
+	        color: black;
+            background-color: #b5b5b5;
+            width: 200px;
+            font: bold;
+            border: 3px groove #FFFFCC;
+            padding: 5px;
+            transition: linear 0.2s;
+        }
+            .textbox:hover
+            {
+                background-color: white;
+                padding: 5px;
+                box-shadow: 0 0 8px;
+            }
+            .textbox:active
+            {
+                background-color: grey;
+                padding: 5px;
+                box-shadow: 0 0 8px;
+            }
+
+#page {
+    width:900px;
+    margin: 0 auto;
+}
+
+#header {  
+    clear:both;
+    width: 100%;
+    height: 111px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-image:url(images/div3.png);
+    /*background-image:url(images/header.png);*/
+    padding-top:30px;
+    padding-left:50px;
+    text-align:center;
+}
+
+
+#leftnav 
+{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-image:url(images/div3.png);
+    background-image:url(images/logo.jpg);
+    width:300px;
+    height:350px;
+    padding-left:45px;
+    margin-left: 53px;
+}
+
+#maincontent
+{
+    float:right;
+    background-image:url(images/div3.png);
+    width:520px;
+    height:350px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+body {
+    /*background-color: #98e3fb;*/
+    background-image:url(images/body4.jpg);
+    background-repeat:repeat-x;
+    background-position:top center;
+    font-size:10pt;
+    font-family:Arial;
+    color:#FFFFFF;
+}
+
+#footer 
+{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-image:url(images/div3.png);
+    margin-left:305px;
+    margin-top:70px;
+    width:700px;
+    clear:both;
+    height:30px;
+    padding-top:40px;
+    text-align:center;
+    color:#FFFFCC;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+    /*background-image:url(images/header.png);*/
+    background-repeat:no-repeat;
+    background-color:#FFFFFF;
+}
+
+h1 {
+    color: #FFFFCC;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+}
+
+h2 {
+    color: #FFFFCC;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    text-align: center;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+}
+
+p1
+{
+    font-family: Papyrus, fantasy;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;   
+}

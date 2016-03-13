@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="StudentPages.master.cs" Inherits="StudentPages" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Student Portal</title>
+    <link href="StyleSheet2.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <script type="text/jscript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="page">
+    <asp:Label ID="Label_welcome" runat="server" Text="Welcome "></asp:Label>
+        <div style="margin-left:-220px;margin-bottom:-145px;">
+       
+       <p><asp:Image ID="Image1" runat="server" Height="125px" Width="125px" /></p> 
+        </div>
+         <div id="header" >
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+        </div>
+         <div class="element2">
+            <a href="#" style="text-decoration: none; color: white;">Preferences &#x25BC</a>
+            <ul>
+                <li><a id="A2" href="#" runat="server" onserverclick="Log_Out"><p1>Log Out</p1></a></li>
+            </ul>
+        </div>
+        <div id="define">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+                 </div>
+        <div class="element">
+            <ul>
+                <li><a href="StudentProfile.aspx">Profile</a></li>
+                <li><a href="Course_Registeration.aspx">Course Registeration</a></li>
+                <li><a href="viewMarks.aspx">View Marks</a></li>
+                <li><a href="viewAttendance.aspx">View Attendance</a></li>
+                <li><a href="#"">Course Feedback</a></li>
+                <li><a href="#"">Print Fee Challan</a></li>
+                <li><a href="#">View Time Table</a></li>
+            </ul>
+        </div>
+        <div id="maincontent1">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+        </div>
+    </div>
+     <div id="footer">
+        @StudentPortal.com
+    </div>
+    </form>
+    <script type="text/jscript">
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href)
+                    $(this).addClass('current');
+            });
+        });
+    </script>
+</body>
+
+</html>
